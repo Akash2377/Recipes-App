@@ -1,0 +1,316 @@
+body {
+  margin: 0px;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#navbar_Container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(151, 235, 235);
+
+  width: 100%;
+}
+
+#navbar > div {
+  display: flex;
+  width: 36%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navbar > div > h1 > a {
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+#navbar > div > h1 > a:hover {
+  color: crimson;
+}
+#navbar > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navbar > div > img {
+  width: 180px;
+
+  cursor: pointer;
+}
+
+#navbar > div > button {
+  cursor: pointer;
+  color: white;
+  background-color: crimson;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  margin-right: 50px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+#navbar > div > button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#search-container {
+  margin-top: 70px;
+}
+#search-box-div {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-image: url("https://t4.ftcdn.net/jpg/05/15/36/49/360_F_515364999_FWCwO32pj2o0NCGAzGuyG88HOmApK3py.jpg");
+  background-size: 100%;
+}
+#search-box-div > img {
+  width: 100%;
+  height: 400px;
+}
+#search-box-div > div {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+#search-box-div > div > h1 {
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#search-box-div > div > form > input {
+  margin-left: -80px;
+  width: 400px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+#search-box-div > div > form > button {
+  height: 36px;
+  border-radius: 0 5px 5px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+}
+#random_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  padding: 4%;
+}
+#random_div > div {
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: 350px;
+  border-radius: 10px 0 10px 0;
+}
+#random_div > div > h2 {
+  margin-bottom: -11px;
+}
+#random_div > div > p {
+  text-align: center;
+  padding: 20px;
+}
+#random_div > div > img {
+  width: 100%;
+  height: 200px;
+}
+#searched_results {
+  width: 100%;
+  padding: 2%;
+}
+#results-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#results-container > div {
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 20px 0 20px 0;
+  overflow: hidden;
+}
+#results-container > div > div:first-child {
+  width: 30%;
+  background-color: gray;
+  height: 300px;
+}
+#results-container > div > div:first-child > img {
+  width: 100%;
+}
+#results-container > div > div:last-child {
+  width: 70%;
+  height: 300px;
+  padding: 2%;
+  color: white;
+  background-color: rgba(220, 20, 60, 0.445);
+}
+#signin {
+  display: none;
+}
+#signin > div {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.164);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#signin > div > div > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  background-color: purple;
+}
+#signin > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  background-color: purple;
+  height: 200px;
+  width: 300px;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 50px 0 50px 0;
+  position: relative;
+}
+#floatX {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#signin > div > div > form > button {
+  padding: 5px;
+  border-radius: 10px 0 10px 0;
+  border: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: white;
+  cursor: pointer;
+  margin-top: -20px;
+}
+#passwordOTP,
+#sumbmitUser {
+  display: none;
+}
+#numberInput,
+#passwordOTP {
+  margin-top: -50px;
+  padding: 10px;
+  border: none;
+  background-color: purple;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
+  font-size: 20px;
+}
+#signUp {
+  display: none;
+}
+#signUp > div {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.164);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signUp > div > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background-color: purple;
+  height: 300px;
+  width: 300px;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 50px 0 50px 0;
+  position: relative;
+}
+#floatX {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#signUp > div > form > button {
+  padding: 5px;
+  border-radius: 10px 0 10px 0;
+  border: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#emailUser,
+#nameUser,
+#NumberSignup {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: purple;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
+  font-size: 20px;
+}
+#NameUserP,
+#LogoutBtn {
+  display: none;
+}
+#NameUserP {
+  font-size: 20px;
+
+  margin: 50px;
+  font-weight: 700;
+}
